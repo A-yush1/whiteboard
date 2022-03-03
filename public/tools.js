@@ -21,13 +21,13 @@ optionsCont.addEventListener("click", (e) => {
 
 function openTools() {
     let iconElem = optionsCont.children[0];
-    iconElem.classList.remove("fa-bars ");
+    iconElem.classList.remove("fa-bars");
     iconElem.classList.add("fa-times");
     toolsCont.style.display = "flex";
 }
 function closeTools() {
     let iconElem = optionsCont.children[0];
-    iconElem.classList.remove("fa-times ");
+    iconElem.classList.remove("fa-times");
     iconElem.classList.add("fa-bars");
     toolsCont.style.display = "none";
 
