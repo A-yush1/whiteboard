@@ -52,6 +52,7 @@ canvas.addEventListener("mouseup", (e) => {
     let url = canvas.toDataURL();
     undoRedoTracker.push(url);
     console.log(undoRedoTracker);
+    console.log(undoRedoTracker.length);
     track = undoRedoTracker.length-1;
 })
 
@@ -71,6 +72,7 @@ redo.addEventListener("click", (e) => {
         trackValue: track,
         undoRedoTracker
     }
+    console.log("Hi");
     socket.emit("redoUndo", data);
 })
 
